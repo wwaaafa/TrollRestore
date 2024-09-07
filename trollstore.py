@@ -48,7 +48,7 @@ def cli(ctx, service_provider: LockdownClient) -> None:
     if (
         device_version < parse_version("15.0")
         or device_version > parse_version("17.0")
-        or parse_version("16.7") < device_version < parse_version("17.0")
+        or parse_version("17.5.1") < device_version < parse_version("17.0")
         or device_version == parse_version("16.7")
         and device_build != "20H18"  # 16.7 RC
     ):
